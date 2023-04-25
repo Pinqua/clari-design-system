@@ -1,22 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Button, RadioGroup, RadioItem } from "@clari/iris-react";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        Hello Learning!!
+        <Button type="button" tone="positive" variant="ghost" size="lg">
+          Hello
+        </Button>
+        <RadioGroup label="Field Title" >
+          <RadioItem value="left" label="Align left" />
+          <RadioItem value="center" label="Align center" />
+          <RadioItem value="right" label="Align right" />
+        </RadioGroup>
       </header>
     </div>
   );
